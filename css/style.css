@@ -1,0 +1,97 @@
+html,body {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	min-width: 960px;
+	font-family: "Fira sans", "Arial", sans-serif;
+	line-height: 18px;
+	font-size: 15px;
+}
+.main {
+	width: 920px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.clear::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.logo {
+	float: left;
+	margin-top: 130px;
+	margin-bottom: 24px;
+	margin-left: 352px;
+}
+.feature {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 460px;
+	margin-left: 230px;
+	list-style-type: none;
+}
+.feature p {
+	float: left;
+	position: relative;
+	width: 350px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 20px;
+	padding-right: 90px;
+	border-radius: 25px;
+}
+.feature .select::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-top: 15px solid #ff8663; /* Добавляем треугольник */
+}
+.feature .selected::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-top: 15px solid #ffffff; /* Добавляем треугольник */
+    transform: rotate(180deg);
+}
+.feature li:nth-child(n) p {
+	background-color: #696666;
+	color: #ffffff;
+	cursor: pointer;
+}
+.feature li:nth-child(2n) p {
+	background-color: #e7e7e7;
+	color: #4f4f4f;
+}
+.feature li:nth-child(n) .selected {
+	background-color: #ff8663;
+	color: #ffffff;
+	cursor: pointer;
+}
+.feature li {
+	margin-top: 5px;
+	background-color: #e7e7e7;
+	border-radius: 25px;
+}
+.feature_items {
+	display: none;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 20px;
+	list-style-type: none;
+	color: #4f4f4f;
+}
+.show {
+    display: block;
+}
+.feature_items li {
+    margin-bottom: 13px;
+}
